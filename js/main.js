@@ -12,12 +12,15 @@ window.onscroll= () => {
 
 /*SCRIPT MENU*/
 const boton = document.querySelector('.menu-btn i')
-console.log(boton)
 const menu = document.querySelector('.menu')
 //const cerrar = document.querySelector('')
-console.log(menu)
 boton.addEventListener('click', () => {
-    console.log('auch')
     menu.classList.toggle('active')
     boton.classList.toggle('active')
 })
+
+
+/*SCROLLREVEAL*/
+ScrollReveal().reveal('.about',{delay: 500 });
+ScrollReveal().reveal('.services',{delay: 500 });
+ScrollReveal().reveal('.skills',{delay: 500 });

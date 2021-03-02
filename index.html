@@ -10,18 +10,16 @@
     <title>Portafolio</title>
 </head>
 <body>
-<div class="container">
-<header>
 
-        <nav class="navbar">
+    <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a>Ferna<span>ndo</span></a>
             </div>
             <ul class="menu">
                 <li ><a href="#">Home</a></li>
-                <li ><a href="#">About</a></li>
-                <li ><a href="#">Services</a></li>
-                <li ><a href="#">Skills</a></li>
+                <li ><a href="#about">About</a></li>
+                <li ><a href="#services">Services</a></li>
+                <li ><a href="#skills">Skills</a></li>
                 <li ><a href="#">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -29,32 +27,134 @@
             </div>
         </div>
     </nav>
-</header>
 
 <!--=======SECCION PRINCIPAL========-->
-<main>
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text1">Hello, my name is</div>
                 <div class="text2">Fernando Arguello</div>
                 <div class="text3">And I'm frontend developer <span>junior</span></div>
+                <a href="#">Hire me</a>
             </div>
     </div>
     </section>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt laboriosam eos odio quaerat at recusandae doloremque voluptates dolorum reprehenderit incidunt molestiae quod distinctio debitis, tenetur unde quo quidem ducimus!</p><br><BR><BR></BR></BR>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eligendi ipsum dolorem asperiores molestiae non quibusdam culpa! Neque at alias, fuga odit quam vel, nisi animi quos eaque inventore praesentium?</p>
+    <!--Acerca de mi-->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="img/profile.jpeg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Fernando and I'm a  frontend developer <span class="typing-2">junior</span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-</main>
+
+    <!--SERVICIOS-->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My Services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i> 
+                    </div>
+                    <div class="text">Web Design</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i> 
+                    </div>
+                    <div class="text">Advertising</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i> 
+                    </div>
+                    <div class="text">App design</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!--======SKILLS=======-->
+<section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title">My Skills</h2>
+        <div class="skills-content">
+            <div class="column left">
+                <div class="text">
+                    My Skills & experiences
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illum temporibus magni. Sint eum quam asperiores libero ab. Voluptatem assumenda nulla ea molestiae cupiditate sunt dolor, temporibus molestias non vero.</p>
+            </div>        
+            <div class="column right">
+                <div class="bars">
+                    <div class="info">
+                        <span class="leyenda">HTML</span>
+                        <span><i class="fab fa-html5"></i></span>
+                    </div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span class="leyenda">CSS</span>
+                        <span><i class="fab fa-css3-alt"></i></span>
+                    </div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span class="leyenda">Bootstrap</span>
+                        <span><i class="fab fa-bootstrap"></i></span>
+                    </div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span class="leyenda">JavaScript</span>
+                        <span><i class="fab fa-js-square"></i></span>
+                    </div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span class="leyenda">Git</span>
+                        <span><i class="fab fa-git"></i></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
 
 
 
-
+<!--SCROLLREVEAL-->
+<script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="js/main.js"></script>
 
-</div>
 </body>
 </html>
