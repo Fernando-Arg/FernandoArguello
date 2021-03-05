@@ -13,6 +13,37 @@ body{
     background-color: #DFDBE5;
 background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.16'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
+html{
+    scroll-behavior: smooth;
+}
+.scroll-up{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 50%;
+    right: 35px;
+    line-height: 55px;
+    bottom: 40px;
+    text-align: center;
+    font-size: 25px;
+    cursor:pointer;
+    z-index: 1;
+    opacity: 0;
+    transition: 300ms all ease;
+}
+.scroll-up:hover{
+    transform: scale(1.1);
+
+}
+.scroll-up.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
 
 .max-width{
     max-width: 1300px;
@@ -36,11 +67,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
     color: #fff;
     font-size: 40px;
     font-weight: 600;
+    cursor:pointer;
 }
 .navbar .menu{
     display: flex;
     flex-direction: row-reverse;
 }
+
 .navbar .menu li{
     padding: 10px;
 }
@@ -130,14 +163,16 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
     display: none;
 }
 /*======ABOUT======*/
-.about, .services, .skills{
+.about, .services, .skills, .contact{
     font-family:'Mukta', sans-serif;
 }
 
 
 .about .about-content,
 .services .serv-content,
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content
+{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -248,9 +283,8 @@ color: crimson;
 }
 
 .services .serv-content .card:hover{
-   transform: scale(1.05);
-   background-color:#6b194e;
-   
+    transform: scale(1.05);
+    background-color:#6b194e;
 }
 .services .serv-content .card i{
     color:#6b194e;
@@ -328,11 +362,141 @@ color: crimson;
     color:#FF6347;
 }
 
+/*======CONTACT======*/
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .max-width{
+    background-color: #111;
+    color: #fff;
+    height:550px;
+}
+.contact .title::before{
+    background-color: #fff;
+}
+
+.contact .title{
+    margin-top: 80px;
+    padding: 20px
+}
+.contact .contact-content .text{
+    font-weight: 600;
+    font-size:30px ;
+    padding-bottom: 10px;
+}
+.contact .contact-content .left p{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify:
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .left .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .left .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: #6b194e;
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .name{
+    margin-right: 10px;
+    
+}
+.contact .right form .textarea{
+    height: 80px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px ;
+    font-size: 17px;
+    font-family: 'Mukta';
+    
+}
 
 
+.contact .right form .button button{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.contact .contact-content .right .button button:hover{
+    color: crimson;
+    background: none;
+}
 
+/*========FOOTER======*/
+.redes{
+    background-color:#6b194e;
+    margin:15px 0 0 0;
+    color:#fff;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.redes-icons a{
+    color: #fff;
+}
 
+.redes .redes-text{
+    font-size: 16px;
+    font-family:'Mukta', sans-serif;
+}
+.redes .redes-text span{
+    font-weight: 600;
+    font-size: 18;
+}
 
+.redes .redes-icons{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+}
+.redes .redes-icons a{
+    
+    flex: 0 0 50%;
+}
 
 /*======MEDIA QUERY======*/
 
@@ -413,7 +577,8 @@ color: crimson;
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
+    .about .about-content .column,
+    .contact .contact-content .column{
         width: 100%;
     }
     .about .about-content {
@@ -426,7 +591,18 @@ color: crimson;
         justify-content: center;
         margin: 0 auto 60px;
     }
+    .contact .contact-content .column{
+        margin-bottom: 40px;
+    }
     
+    .contact .max-width{
+    background-color: #111;
+    color: #fff;
+    height:950px;
+}
+.contact .contact-content .left .row{
+    justify-content: center;
+}
 }
 
 @media screen and (max-width:745px){
@@ -449,6 +625,13 @@ color: crimson;
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px ;
+    }
+
+    .skills .skills-content .column{
+        width: 100%;
+    }
+    .skills .skills-content .left{
+        margin-bottom: 40px;
     }
 
 }
@@ -500,6 +683,6 @@ color: crimson;
 
 .services .serv-content .card{
     width: 100%;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 }
