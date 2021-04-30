@@ -108,7 +108,7 @@ html{
 }
 /*========HOME=========*/ 
 .home{
-    background-image: url('../img/bg1.webp');
+    background-image: url('../img/bg0.jpg');
     position: relative;
     display: flex;
     color: #fff;
@@ -121,6 +121,7 @@ html{
     font-family:'ubuntu', sans-serif;
     animation: imagenhome 21s infinite linear
 }
+/*
 @keyframes imagenhome {
     0%{
         background-image: url('../img/bg1.webp');
@@ -141,7 +142,7 @@ html{
         background-image: url('../img/bg0.jpg');
     }
     
-}
+}*/
 .home::before{
     content: "";
     position: absolute;
