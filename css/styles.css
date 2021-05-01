@@ -119,7 +119,7 @@ html{
     background-position: center center;
     background-repeat: no-repeat;
     font-family:'ubuntu', sans-serif;
-    animation: imagenhome 21s infinite linear
+    animation: imagenhome 21s infinite linear;
 }
 @keyframes imagenhome {
     0%{
