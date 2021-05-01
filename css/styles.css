@@ -725,6 +725,7 @@ color: crimson;
     margin-bottom: 20px;
 }
         .contact .max-width {
-        height:900px;
+        height:850px;
+            background-color:red;
     }
 }
