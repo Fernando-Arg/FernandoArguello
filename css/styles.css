@@ -121,7 +121,7 @@ html{
     font-family:'ubuntu', sans-serif;
     animation: imagenhome 21s infinite linear
 }
-/*
+
 @keyframes imagenhome {
     0%{
         background-image: url('../img/bg1.webp');
@@ -142,7 +142,7 @@ html{
         background-image: url('../img/bg0.jpg');
     }
     
-}*/
+}
 .home::before{
     content: "";
     position: absolute;
