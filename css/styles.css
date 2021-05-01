@@ -108,7 +108,7 @@ html{
 }
 /*========HOME=========*/ 
 .home{
-    background-image: url(img/bg1.webp);
+    background-image: url(../img/bg1.webp);
     position: relative;
     display: flex;
     color: #fff;
@@ -123,22 +123,22 @@ html{
 }
 @keyframes imagenhome {
     0%{
-        background-image: url(img/bg1.webp);
+        background-image: url(../img/bg1.webp);
     }
     33%{
-        background-image: url(img/bg1.webp);
+        background-image: url(../img/bg1.webp);
     }
     34%{
-        background-image: url(img/bg2.jpeg);
+        background-image: url(../img/bg2.jpeg);
     }
     66%{
-        background-image: url(img/bg2.jpeg);
+        background-image: url(../img/bg2.jpeg);
     }
     67%{
-        background-image: url(img/bg0.jpg);
+        background-image: url(../img/bg0.jpg);
     }
     100%{
-        background-image: url(img/bg0.jpg);
+        background-image: url(../img/bg0.jpg);
     }
     
 }
